@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 // Database setup
 const db = new Client({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.SUPABASE_URL,
   ssl: {
     rejectUnauthorized: false, // For Railway PostgreSQL SSL connection
   },
